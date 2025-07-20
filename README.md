@@ -1,16 +1,38 @@
 # File Organizer
 
-A Python-based file organization tool that helps you keep your directories clean and organized by automatically sorting files into categorized folders based on their file types. The tool comes with both a command-line interface (CLI) and a graphical user interface (GUI).
+A Python-based file organization tool that helps you keep your directories clean and organized by automatically sorting files into categorized folders based on their file types. The tool comes with three interfaces:
+- Command-line (CLI) for terminal users
+- Basic Tkinter GUI for a simple graphical interface
+- Modern PyQt6-based GUI with enhanced features and better aesthetics
 
 ## Features
 
+### Core Features
 - Automatically organizes files into categorized folders
 - Supports multiple file categories (Images, Documents, Videos, Audio, Archives, Code, etc.)
-- Provides both CLI and GUI interfaces
 - Includes preview mode to see changes before making them
 - Supports undo functionality for reverting the last organization
 - Maintains a detailed log of all operations
-- macOS-friendly GUI design
+
+### Interface Options
+1. **Command Line Interface (CLI)**
+   - Quick and efficient for terminal users
+   - Perfect for automation and scripting
+   - Preview mode available
+   - Undo functionality
+
+2. **Tkinter GUI**
+   - Simple and lightweight graphical interface
+   - macOS-friendly design
+   - Real-time operation logging
+   - Folder selection via browse button
+
+3. **PyQt6 Modern GUI**
+   - Modern and polished user interface
+   - Enhanced visual feedback
+   - Progress tracking
+   - Drag and drop support
+   - Custom styling and icons
 
 ## File Categories
 
@@ -37,12 +59,18 @@ The organizer sorts files into the following categories:
    source venv/bin/activate  # On Windows, use: venv\Scripts\activate
    ```
 
+3. Install required packages:
+   ```bash
+   # For CLI and Basic GUI only
+   pip install pyinstaller
+
+   # For Modern GUI (PyQt6)
+   pip install PyQt6 pyinstaller
+   ```
+
 ## Usage
 
 ### Command Line Interface (CLI)
-
-The CLI version offers several options:
-
 ```bash
 python file_organizer.py [--folder PATH] [--preview] [--undo]
 ```
@@ -67,19 +95,28 @@ python file_organizer.py --preview
 python file_organizer.py --undo
 ```
 
-### Graphical User Interface (GUI)
-
-To launch the GUI version:
-
+### Basic GUI (Tkinter)
 ```bash
 python file_organizer_gui.py
 ```
 
-The GUI provides a user-friendly interface with:
+Features:
+- Simple and functional interface
 - Folder selection via browse button
 - One-click organization
 - Real-time operation logging
-- macOS-optimized design
+
+### Modern GUI (PyQt6)
+```bash
+python file_organizer_pyqt.py
+```
+
+Features:
+- Modern and polished interface
+- Drag and drop support
+- Progress tracking with visual feedback
+- Enhanced logging with success indicators
+- Customizable themes and icons
 
 ## Logging
 
