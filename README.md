@@ -1,9 +1,6 @@
 # File Organizer
 
-A Python-based file organization tool that helps you keep your directories clean and organized by automatically sorting files into categorized folders based on their file types. The tool comes with three interfaces:
-- Command-line (CLI) for terminal users
-- Basic Tkinter GUI for a simple graphical interface
-- Modern PyQt6-based GUI with enhanced features and better aesthetics
+A Python-based file organization tool that helps you keep your directories clean and organized by automatically sorting files into categorized folders based on their file types. The tool uses a modern PyQt6-based GUI with enhanced features and sleek aesthetics.
 
 ## Features
 
@@ -14,25 +11,13 @@ A Python-based file organization tool that helps you keep your directories clean
 - Supports undo functionality for reverting the last organization
 - Maintains a detailed log of all operations
 
-### Interface Options
-1. **Command Line Interface (CLI)**
-   - Quick and efficient for terminal users
-   - Perfect for automation and scripting
-   - Preview mode available
-   - Undo functionality
-
-2. **Tkinter GUI**
-   - Simple and lightweight graphical interface
-   - macOS-friendly design
-   - Real-time operation logging
-   - Folder selection via browse button
-
-3. **PyQt6 Modern GUI**
-   - Modern and polished user interface
-   - Enhanced visual feedback
-   - Progress tracking
-   - Drag and drop support
-   - Custom styling and icons
+### Interface Features
+- Modern and polished PyQt6-based user interface
+- Enhanced visual feedback with progress tracking
+- Drag and drop support for easy file organization
+- Custom styling and icons
+- Real-time operation logging
+- Folder selection via browse button
 
 ## File Categories
 
@@ -61,62 +46,33 @@ The organizer sorts files into the following categories:
 
 3. Install required packages:
    ```bash
-   # For CLI and Basic GUI only
-   pip install pyinstaller
-
-   # For Modern GUI (PyQt6)
-   pip install PyQt6 pyinstaller
+# Install required packages
+   pip install PyQt6 pyinstaller pillow
    ```
 
 ## Usage
 
-### Command Line Interface (CLI)
-```bash
-python file_organizer.py [--folder PATH] [--preview] [--undo]
-```
+### Running the Application
 
-Options:
-- `--folder`: Specify the folder to organize (defaults to ~/Downloads)
-- `--preview`: Preview changes without actually moving files
-- `--undo`: Revert the last organization operation
+You can run the application in two ways:
 
-Examples:
-```bash
-# Organize downloads folder
-python file_organizer.py
-
-# Organize a specific folder
-python file_organizer.py --folder /path/to/folder
-
-# Preview changes without moving files
-python file_organizer.py --preview
-
-# Undo last organization
-python file_organizer.py --undo
-```
-
-### Basic GUI (Tkinter)
-```bash
-python file_organizer_gui.py
-```
-
-Features:
-- Simple and functional interface
-- Folder selection via browse button
-- One-click organization
-- Real-time operation logging
-
-### Modern GUI (PyQt6)
+1. **Run from Source**
 ```bash
 python file_organizer_pyqt.py
 ```
 
-Features:
+2. **Use the macOS App**
+- Download the latest release
+- Move the `File Organizer.app` to your Applications folder
+- Launch it like any other macOS application
+
+### Features
 - Modern and polished interface
-- Drag and drop support
+- Drag and drop support for easy file organization
 - Progress tracking with visual feedback
 - Enhanced logging with success indicators
 - Customizable themes and icons
+- One-click organization
 
 ## Logging
 
