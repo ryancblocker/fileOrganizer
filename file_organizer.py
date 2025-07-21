@@ -1,18 +1,3 @@
-"""
-File Organizer Utility – UI V4
-———————————————
-**Changes requested by Ryan:**
-
-• ⚙️ **Settings icon fallback** – if the system theme icon isn’t found we now show a Unicode gear glyph instead of a blank square.
-• 🔄 **Undo polish** – Undo now:
-  1. moves every file back ✔️
-  2. deletes each destination folder *if it is empty* ✔️
-  3. resets the *Sort Files* button text and clears the button-fill progress ✔️
-• 📄 **List-style preview** – the main preview is back to a tidy single-column list (no grid). ✔️
-
-Tested on macOS 14 with Python 3.12.11 / PyQt5.
-"""
-
 import sys, os, json, shutil
 from pathlib import Path
 from PyQt5.QtWidgets import (
