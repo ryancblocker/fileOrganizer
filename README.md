@@ -58,7 +58,7 @@ You can run the application in two ways:
 
 1. **Run from Source**
 ```bash
-python file_organizer_pyqt.py
+python file_organizer.py
 ```
 
 2. **Use the macOS App**
