@@ -46,8 +46,7 @@ The organizer sorts files into the following categories:
 
 3. Install required packages:
    ```bash
-# Install required packages
-   pip install PyQt6 pyinstaller pillow
+   pip install -r requirements.txt
    ```
 
 ## Usage
